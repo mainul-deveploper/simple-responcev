@@ -9,9 +9,104 @@
             color: brown;
             text-decoration: underline;
         }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            gap: 20px;
+        }
+        .food{
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .food img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 <body>
     <h1>EXPLORE BASIC RESPONSIVENESS USING SIMPLE MEDIA QUERY</h1>
+
+        <!-- .container>.food*12>img+h3{food Item-$}+p{price:\$00}+p>lorem20 -->
+        <div class="container">
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-1</h3>
+                <p>price:$00</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem fugit rerum ut harum provident temporibus totam quos accusantium id!</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-2</h3>
+                <p>price:$00</p>
+                <p>Officiis nesciunt officia aliquam perspiciatis provident dolore minus deleniti, blanditiis velit quisquam vero iste tempora sed quos tempore aspernatur esse.</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-3</h3>
+                <p>price:$00</p>
+                <p>Et tenetur exercitationem repellat perspiciatis praesentium consequatur, quis consectetur dolorum, alias aut delectus facilis quos consequuntur molestias quisquam doloribus at.</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-4</h3>
+                <p>price:$00</p>
+                <p>Sequi voluptatum fuga dolorem. Pariatur ex hic dignissimos eveniet ipsum magnam assumenda, dicta at animi quia minima optio, amet tempora.</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-5</h3>
+                <p>price:$00</p>
+                <p>Consequuntur cupiditate quis, id odit magnam sequi quaerat perferendis dicta aperiam aspernatur, nesciunt numquam accusamus repellendus quisquam impedit, facilis dolor?</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-6</h3>
+                <p>price:$00</p>
+                <p>Ab ad odit reprehenderit beatae ratione nobis neque magni commodi quod numquam. Doloremque, dolorem perferendis aliquam minus culpa sunt delectus.</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-7</h3>
+                <p>price:$00</p>
+                <p>Aliquam veniam nulla distinctio, ex eveniet repellendus libero numquam animi earum culpa corporis veritatis est ipsum accusamus incidunt dolores odit.</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-8</h3>
+                <p>price:$00</p>
+                <p>Reprehenderit distinctio, tempora aperiam dignissimos dolor modi adipisci nobis minus tenetur asperiores ad dolore quaerat ducimus ipsa eligendi nisi fuga.</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-9</h3>
+                <p>price:$00</p>
+                <p>Laudantium distinctio voluptates neque mollitia in. Sit tenetur officia necessitatibus maiores accusamus alias dolorum? Sint laboriosam perspiciatis nesciunt. Recusandae, rerum!</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-10</h3>
+                <p>price:$00</p>
+                <p>Error distinctio voluptas nulla quibusdam quaerat suscipit dolore quia ratione, nostrum necessitatibus quasi cupiditate tempora sit inventore at, sapiente alias.</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-11</h3>
+                <p>price:$00</p>
+                <p>Temporibus nam sapiente accusamus optio perferendis voluptas itaque officia quos illum rem beatae sunt accusantium, iusto dolor. Temporibus, doloribus sint.</p>
+            </div>
+            <div class="food">
+                <img src="./images/food.webp" alt="">
+                <h3>food Item-12</h3>
+                <p>price:$00</p>
+                <p>Cumque non deserunt odit dolores, provident tenetur ex distinctio ducimus voluptatem eaque! Sunt voluptate porro vero sint ipsum eaque blanditiis.</p>
+            </div>
+        </div>
 </body>
 </html>
