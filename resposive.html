@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE WEBSITE</title>
+    <style>
+        body{
+            border: 10px solid skyblue;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        /* img{
+            width: 100%;
+        } */
+         .img-cont{
+            display: flex;
+         }
+        .img-cont div{
+            width: 50%;
+        }
+        .img-cont img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px) {
+            .img-cont{
+                flex-direction: column-reverse;
+
+            }
+            .img-cont div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>RESPONSIVE WEBSITE</h1>
+
+    <ol>
+        <li>viewport er meta teg </li>
+        <li>css RESPONSIVE unit</li>
+        <li>body max width and horizontal center align</li>
+        <li>image fluid </li>
+        <li>two column flex and use media query with flex-direction column</li>
+        <li>multi-column er jonno grid layout </li>
+        <li>menu resposive: will need js 
+        </li>
+    </ol>
+    <main>
+        <div class="img-cont">
+            <div>
+                <img src="./images/food.webp" alt="">
+            </div>
+            <div>
+                <img src="./images/tiger.jpg" alt="" srcset="">
+            </div>
+        </div>
+       
+        
+    </main>
+</body>
+</html>
