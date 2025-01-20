@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practices responsive</title>
+    <style>
+        main{
+           max-width: 600px;
+           height: 600px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+            .container{
+                border: 2px solid black;
+                display: flex;
+                height: 300px;
+                width: 1140px;
+                padding: 10px;
+                border-radius: 10px;
+                gap: 10px;
+
+                justify-content: center;
+                align-items: center;
+            }
+            .child-1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid lightslategrey;
+                height: 250px;
+                width: 30%;
+                background-color: lightslategrey;
+                border-radius: 10px;
+                padding: 5px;
+            }
+            .child-2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid lightgreen;
+                height: 250px;
+                width: 70%;
+                padding: 8px;
+                border-radius: 12px;
+                background-color: lightseagreen;
+
+            }
+            /* mobile */
+            @media screen and (max-width:576px ) {
+                .container{
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .child-1{
+                    width: 50%;
+                    height: 50%;
+                    padding: 3px;
+                    border-radius: 6px;
+                    background-color: rgb(180, 56, 6);
+                } 
+                .child-2{
+                    width: 50%;
+                    height: 50%;
+                    padding: 3px;
+                    border-radius: 6px;
+                    background-color: rgb(175, 24, 142);
+                }
+                .container{
+                padding: 3px;}
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="child-1"><h1>LEFT</h1></div>
+            <div class="child-2">
+                <h1>RIGHT</h1></div>
+        </div>
+    </main>
+</body>
+</html>
