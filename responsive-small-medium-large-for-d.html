@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE MEDIA QUERY FOR SMALL , MEDIUM And LARGE DEVICES</title>
+    <style>
+        h1{
+            color: red;
+            background-color: black;
+        }
+        .container{
+            border: 5px solid green;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 15px;
+        }
+        .food{
+            border: 1px double red;
+            padding: 15px;
+        }
+        .food img{
+            width: 100%;
+        }
+        button{
+            padding: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            background-color: rgb(33, 83, 3);
+            color: rgb(230, 30, 30);
+            border: none;
+            border-radius: 5px;
+            /* width: 150px;
+            height: 70px; */
+        }
+        /* small device */
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .food{
+                background-color: burlywood;
+            }
+            button{
+                padding: 20px;
+                font-size: 12px;
+                font-weight: 800;
+                background-color: rgb(26, 101, 161);
+                color: rgb(158, 168, 7);
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        /* medium device */
+        @media screen and (min-width: 577px) and (max-width:992px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .food{
+                background-color: cadetblue;
+                color: brown;
+            }
+            button{
+                padding: 20px;
+                font-size: 12px;
+                font-weight: 900;
+                background-color: rgb(133, 74, 106);
+                color: rgb(1, 73, 37);
+                border: none;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>RESPONSIVE MEDIA QUERY FOR SMALL , MEDIUM And LARGE DEVICES</h1>
+
+
+    <!-- .container>.food*12>img[src="./images/food.webp"]+h3{food Item-$}+p{price:\$00}+p>lorem20^btn{bye NOW} -->
+
+    <div class="container">
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-1</h3>
+            <p>price:$00</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, earum. Accusantium nulla, at delectus eveniet perspiciatis libero molestiae animi aliquam.</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-2</h3>
+            <p>price:$00</p>
+            <p>Numquam, voluptas a saepe sit corporis et doloremque quibusdam! Ut ab sapiente ullam impedit incidunt quas deleniti minima recusandae nostrum?</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-3</h3>
+            <p>price:$00</p>
+            <p>Doloremque, tempora? Aliquid modi incidunt unde ut quisquam debitis autem numquam, voluptates maxime odit aut, sint architecto perspiciatis fugit veritatis.</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-4</h3>
+            <p>price:$00</p>
+            <p>Nisi, itaque corrupti. Incidunt numquam molestias cumque dolor ipsa veritatis. Numquam nostrum porro rem hic recusandae minima molestias at atque.</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-5</h3>
+            <p>price:$00</p>
+            <p>Quasi nisi, velit dolores quae obcaecati quidem voluptates repudiandae consectetur dignissimos magnam iste. A deserunt tempora necessitatibus vero, nesciunt nemo.</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-6</h3>
+            <p>price:$00</p>
+            <p>Vero reiciendis velit quas aspernatur, fugit nobis quasi ipsa minima! Perspiciatis, numquam magnam facilis molestiae voluptatibus cupiditate necessitatibus illum error?</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-7</h3>
+            <p>price:$00</p>
+            <p>Iste nesciunt suscipit voluptatum ipsa quidem, facere ipsam, omnis architecto odio excepturi sapiente sit, totam recusandae adipisci? Perspiciatis, quis doloribus.</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-8</h3>
+            <p>price:$00</p>
+            <p>Suscipit ducimus dolorem praesentium laboriosam corrupti distinctio expedita ex, numquam iusto fuga, inventore necessitatibus qui blanditiis! Repudiandae ea deserunt molestias!</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-9</h3>
+            <p>price:$00</p>
+            <p>Nesciunt neque ad, libero atque error, odit, incidunt aspernatur non quod vero itaque distinctio provident iure esse. Consequuntur, blanditiis aperiam.</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-10</h3>
+            <p>price:$00</p>
+            <p>Voluptatibus id sequi corrupti ipsam odio ea, blanditiis enim dolores? Laboriosam assumenda officiis dolore nulla, rerum voluptatem delectus quae ullam.</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-11</h3>
+            <p>price:$00</p>
+            <p>Soluta ipsam mollitia, optio debitis neque commodi reprehenderit veritatis et quaerat non. Eaque placeat nobis, voluptate nam doloremque itaque delectus.</p>
+            <button>bye NOW</button>
+        </div>
+        <div class="food">
+            <img src="./images/food.webp" alt="">
+            <h3>food Item-12</h3>
+            <p>price:$00</p>
+            <p>Ut beatae est, incidunt, adipisci vitae quo recusandae saepe mollitia consequatur illum amet minima a error? Cumque ab quibusdam fugit?</p>
+            <button>bye NOW</button>
+        </div>
+    </div>
+</body>
+</html>
