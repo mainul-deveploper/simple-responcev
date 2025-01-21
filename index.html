@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            border: 1px solid red;
+            width: 50%;
+            height: 300px;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .child{
+            border: 1px solid rgb(39, 59, 2);
+            height: ;
+        }
+        .flex{
+            display: flex;
+        }
+        .child-1{
+            background-color: red;
+            height: 300px;
+        }
+        .child-2{
+            background-color: yellowgreen;
+            height: 150px;
+        }
+        .child-3{
+            background-color: purple;
+            height: 150px;
+        }
+        .child-4{
+            background-color: lightslategray;
+            height: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="cont flex">
+            <div class="child">
+                <div class="child-1">
+                    1
+                </div>
+                <div class="child">
+                    <div class="child-2">2
+                        <div class="child">
+                            <div class="child-3">3</div>
+                            <div class="child-4">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
